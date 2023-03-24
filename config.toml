@@ -8,9 +8,10 @@ x_min = -2.2
 x_max = 0.8
 y_min = -1.5
 y_max = 1.5
-max_iter = 1000
-internal_color = "blue"
-external_color = "black"
+threshold = 4
+max_iterations = 20
+color = 100
+background_color = "black"
 output_file = "mandelbrot.png"
 
 [julia]
