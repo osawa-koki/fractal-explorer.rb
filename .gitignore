@@ -544,3 +544,4 @@ FodyWeavers.xsd
 
 /**/dist/*
 !.gitkeep
+!index.html
