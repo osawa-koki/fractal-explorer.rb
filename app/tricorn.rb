@@ -28,6 +28,7 @@ y_range = y_max - y_min
 x_step = x_range / width
 y_step = y_range / height
 
+# トライコーン集合の描画
 for x in 0..width-1 do
   for y in 0..height-1 do
     x0 = x_min + x * x_step
