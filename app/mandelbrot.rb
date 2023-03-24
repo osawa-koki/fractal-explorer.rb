@@ -14,7 +14,7 @@ x_min = mandelbrot_config['x_min'].to_f
 x_max = mandelbrot_config['x_max'].to_f
 y_min = mandelbrot_config['y_min'].to_f
 y_max = mandelbrot_config['y_max'].to_f
-max_iter = mandelbrot_config['max_iter'].to_i
+max_iterations = mandelbrot_config['max_iterations'].to_i
 internal_color = mandelbrot_config['internal_color']
 external_color = mandelbrot_config['external_color']
 output_file = mandelbrot_config['output_file']
@@ -29,7 +29,7 @@ for y in 0..height-1
     z_re = c_re
     z_im = c_im
     is_inside = true
-    for i in 0..max_iter-1
+    for i in 0..max_iterations-1
       z_re2 = z_re * z_re
       z_im2 = z_im * z_im
       if z_re2 + z_im2 > 4
