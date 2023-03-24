@@ -24,3 +24,14 @@ max_iter = 70
 internal_color = "purple"
 external_color = "white"
 output_file = "julia.png"
+
+[tricorn]
+x_min = -2.3
+x_max = 1.7
+y_min = -2.0
+y_max = 2.0
+max_iterations = 50
+threshold = 4
+color = 160
+background_color = 'black'
+output_file = 'tricorn.png'
