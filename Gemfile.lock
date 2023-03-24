@@ -4,6 +4,7 @@ GEM
     pkg-config (1.5.1)
     rmagick (5.2.0)
       pkg-config (~> 1.4)
+    tomlrb (2.0.3)
 
 PLATFORMS
   x64-mingw-ucrt
@@ -11,6 +12,7 @@ PLATFORMS
 
 DEPENDENCIES
   rmagick (~> 5.2)
+  tomlrb (~> 2.0)
 
 BUNDLED WITH
    2.4.8
