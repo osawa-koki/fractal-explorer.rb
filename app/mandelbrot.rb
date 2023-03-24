@@ -24,10 +24,10 @@ image = Magick::Image.new(width, height)
 # マンデルブロ集合の描画
 for y in 0..height-1
   for x in 0..width-1
-    c_re = (x.to_f / width.to_f) * (x_max - x_min) + x_min
-    c_im = (y.to_f / height.to_f) * (y_max - y_min) + y_min
-    z_re = c_re
-    z_im = c_im
+    c_re = cx
+    c_im = cy
+    z_re = (x.to_f / width.to_f) * (x_max - x_min) + x_min
+    z_im = (y.to_f / height.to_f) * (y_max - y_min) + y_min
     is_inside = true
     for i in 0..max_iter-1
       z_re2 = z_re * z_re
@@ -46,5 +46,6 @@ for y in 0..height-1
     end
   end
 end
+
 
 image.write(File.join(output_dir, output_file))
