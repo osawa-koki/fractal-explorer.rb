@@ -1,7 +1,7 @@
 [global]
 width = 512
 height = 512
-output_dir = "./dist"
+output_dir = './dist'
 
 [mandelbrot]
 x_min = -2.2
@@ -11,8 +11,8 @@ y_max = 1.5
 threshold = 4
 max_iterations = 20
 color = 100
-background_color = "black"
-output_file = "mandelbrot.png"
+background_color = 'black'
+output_file = 'mandelbrot.png'
 
 [julia]
 x_min = -1.5
@@ -24,8 +24,8 @@ cy = 0.6
 threshold = 4
 max_iterations = 70
 color = 220
-background_color = "black"
-output_file = "julia.png"
+background_color = 'black'
+output_file = 'julia.png'
 
 [tricorn]
 x_min = -2.3
@@ -46,8 +46,8 @@ y_max = 0.02
 max_iterations = 20
 threshold = 10
 color = 80
-background_color = "black"
-output_file = "burning_ship.png"
+background_color = 'black'
+output_file = 'burning_ship.png'
 
 [barnsley_fern]
 size_x = 10.0
@@ -56,9 +56,9 @@ start_x = 48.0
 start_y = 0.0
 zoom = 90.0
 max_iterations = 300000
-color = "green"
-background_color = "white"
-output_file = "barnsley_fern.png"
+color = 'green'
+background_color = 'white'
+output_file = 'barnsley_fern.png'
 
 [pythagoras_tree]
 color_from = 0
@@ -68,13 +68,13 @@ degree = 60
 max_iterations = 10
 left = 35
 bottom = 20
-output_file = "pythagoras_tree.png"
+output_file = 'pythagoras_tree.png'
 
 [recursive_tree]
 shrink = 70
 length = 30
 angle = 30
 max_iterations = 7
-color = "green"
+color = 'green'
 stroke_width = 1
-output_file = "recursive_tree.png"
+output_file = 'recursive_tree.png'
