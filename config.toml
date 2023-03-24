@@ -48,3 +48,14 @@ threshold = 10
 color = 80
 background_color = "black"
 output_file = "burning_ship.png"
+
+[barnsley_fern]
+size_x = 10.0
+size_y = 95.0
+start_x = 48.0
+start_y = 0.0
+zoom = 90.0
+max_iterations = 300000
+color = "green"
+background_color = "white"
+output_file = "barnsley_fern.png"
