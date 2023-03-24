@@ -37,3 +37,14 @@ threshold = 4
 color = 160
 background_color = 'black'
 output_file = 'tricorn.png'
+
+[burning_ship]
+x_min = -1.8
+x_max = -1.7
+y_min = -0.1
+y_max = 0.02
+max_iterations = 20
+threshold = 10
+color = 80
+background_color = "black"
+output_file = "burning_ship.png"
