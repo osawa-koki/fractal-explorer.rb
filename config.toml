@@ -84,3 +84,10 @@ color = 'red'
 triagle_size = 80
 max_iterations = 3
 output_file = 'sierpinski_triangle.png'
+
+[sierpinski_carpet]
+color = 'red'
+background_color = 'black'
+carpet_size = 90
+max_iterations = 5
+output_file = 'sierpinski_carpet.png'
