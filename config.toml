@@ -78,3 +78,9 @@ max_iterations = 7
 color = 'green'
 stroke_width = 1
 output_file = 'recursive_tree.png'
+
+[sierpinski_triangle]
+color = 'red'
+triagle_size = 80
+max_iterations = 3
+output_file = 'sierpinski_triangle.png'

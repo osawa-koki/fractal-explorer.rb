@@ -1,15 +1,22 @@
+require 'tomlrb'
 require 'rmagick'
 require 'bigdecimal/math'
 
-width = 300
-height = 300
-# $color = 0
-triagle_size = 70
-$max_iterations = 5
+config = Tomlrb.load_file('config.toml')
+
+global_config = config['global']
+sierpinski_triangle_config = config['sierpinski_triangle']
+
+width = global_config['width'].to_i
+height = global_config['height'].to_i
+output_dir = global_config['output_dir']
+
+$color = sierpinski_triangle_config['color']
+triagle_size = sierpinski_triangle_config['triagle_size'].to_i
+$max_iterations = sierpinski_triangle_config['max_iterations'].to_i
+output_file = sierpinski_triangle_config['output_file']
 
 $image = Magick::Image.new(width, height)
-
-$color = "hsl(0, 100%, 50%)"
 
 def draw_triangle(x, y, size)
   p1_x = x + size / 2
@@ -85,4 +92,4 @@ rec_fx(
   1,
 )
 
-$image.write('out.png')
+$image.write(File.join(output_dir, output_file))
