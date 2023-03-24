@@ -1,0 +1,14 @@
+[global]
+width = 512
+height = 512
+output_dir = "./dist"
+
+[mandelbrot]
+x_min = -2.2
+x_max = 0.8
+y_min = -1.5
+y_max = 1.5
+max_iter = 1000
+internal_color = "blue"
+external_color = "black"
+output_file = "mandelbrot.png"
