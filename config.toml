@@ -69,3 +69,12 @@ max_iterations = 10
 left = 35
 bottom = 20
 output_file = "pythagoras_tree.png"
+
+[recursive_tree]
+shrink = 70
+length = 30
+angle = 30
+max_iterations = 7
+color = "green"
+stroke_width = 1
+output_file = "recursive_tree.png"
