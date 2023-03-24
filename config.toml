@@ -21,9 +21,10 @@ y_min = -1.5
 y_max = 1.5
 cx = -0.4
 cy = 0.6
-max_iter = 70
-internal_color = "purple"
-external_color = "white"
+threshold = 4
+max_iterations = 70
+color = 220
+background_color = "black"
 output_file = "julia.png"
 
 [tricorn]
