@@ -59,3 +59,13 @@ max_iterations = 300000
 color = "green"
 background_color = "white"
 output_file = "barnsley_fern.png"
+
+[pythagoras_tree]
+color_from = 0
+color_upto = 320
+size = 15
+degree = 60
+max_iterations = 10
+left = 35
+bottom = 20
+output_file = "pythagoras_tree.png"
