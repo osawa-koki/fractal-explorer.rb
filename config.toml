@@ -101,3 +101,13 @@ max_iterations = 5
 divition = 3
 bottom_adjuster = 1.7
 output_file = 'koch_snowflake.png'
+
+[dragon_curve]
+x = 35
+y = 70
+color = 'red'
+background_color = 'black'
+delta = 220.0
+stroke_width = 1
+max_iterations = 12
+output_file = 'dragon_curve.png'
