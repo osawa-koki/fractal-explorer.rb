@@ -111,3 +111,12 @@ delta = 220.0
 stroke_width = 1
 max_iterations = 12
 output_file = 'dragon_curve.png'
+
+[rose_curve]
+n = 5
+k = 2
+size = 90
+step = 0.01
+radius = 1.0
+background_color = 'white'
+output_file = 'rose_curve.png'
