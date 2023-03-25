@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>fractal-explorer.rb</title>
+  <link rel="shortcut icon" href="tako.png" type="image/x-icon" />
+  <style>
+    body {
+      font-family: 'Consolas';
+    }
+    main {
+      margin: auto;
+      max-width: 1200px;
+      padding: 1rem;
+    }
+    #Gallery {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    section {
+      margin: 0.3rem 1rem;
+    }
+    section img {
+      width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    (() => {
+      const title_element = document.querySelector('title');
+      const title_content = title_element.textContent;
+      const loading_texts = ['⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'];
+      let current_loading_text = 0;
+      setInterval(() => {
+        title_element.textContent = `${loading_texts[current_loading_text]} ${title_content}`;
+        current_loading_text = (current_loading_text + 1) % loading_texts.length;
+      }, 300);
+    })();
+  </script>
+  <main>
+    <h1>fractal-explorer.rb</h1>
+    <p>Rubyでフラクタル図形を描写してみた！</p>
+    <div id="Gallery">
+      <section>
+        <h2>Manbdelbrot</h2>
+        <img src="mandelbrot.png" />
+      </section>
+      <section>
+        <h2>Julia</h2>
+        <img src="julia.png" />
+      </section>
+      <section>
+        <h2>Tricorn</h2>
+        <img src="tricorn.png" />
+      </section>
+      <section>
+        <h2>Burning Ship</h2>
+        <img src="burning_ship.png" />
+      </section>
+      <section>
+        <h2>Barnsley Fern</h2>
+        <img src="barnsley_fern.png" />
+      </section>
+      <section>
+        <h2>Pytagoras Tree</h2>
+        <img src="pythagoras_tree.png" />
+      </section>
+      <section>
+        <h2>Recursive Tree</h2>
+        <img src="recursive_tree.png" />
+      </section>
+      <section>
+        <h2>Sierpinski Triangle</h2>
+        <img src="sierpinski_triangle.png" />
+      </section>
+      <section>
+        <h2>Sierpinski Carpet</h2>
+        <img src="sierpinski_carpet.png" />
+      </section>
+      <section>
+        <h2>Koch Snowflake</h2>
+        <img src="koch_snowflake.png" />
+      </section>
+      <section>
+        <h2>Dragon Curve</h2>
+        <img src="dragon_curve.png" />
+      </section>
+      <section>
+        <h2>Rose Curve</h2>
+        <img src="rose_curve.png" />
+      </section>
+    </div>
+  </main>
+</body>
+</html>
