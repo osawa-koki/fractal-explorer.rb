@@ -15,8 +15,8 @@ x_max = mandelbrot_config['x_max'].to_f
 y_min = mandelbrot_config['y_min'].to_f
 y_max = mandelbrot_config['y_max'].to_f
 max_iterations = mandelbrot_config['max_iterations'].to_i
-internal_color = mandelbrot_config['internal_color']
-external_color = mandelbrot_config['external_color']
+$color = mandelbrot_config['color']
+$background_color = mandelbrot_config['background_color']
 output_file = mandelbrot_config['output_file']
 
 image = Magick::Image.new(width, height)
@@ -40,9 +40,12 @@ for y in 0..height-1
       z_re = z_re2 - z_im2 + c_re
     end
     if is_inside
-      image.pixel_color(x, y, internal_color)
+      image.pixel_color(x, y, $background_color)
     else
-      image.pixel_color(x, y, external_color)
+      hue = $color + i * 360 / max_iterations
+      saturation = 100
+      lightness = 50
+      image.pixel_color(x, y, "hsl(#{hue},#{saturation}%,#{lightness}%)")
     end
   end
 end
