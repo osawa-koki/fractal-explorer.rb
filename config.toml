@@ -91,3 +91,12 @@ background_color = 'black'
 carpet_size = 90
 max_iterations = 5
 output_file = 'sierpinski_carpet.png'
+
+[koch_snowflake]
+color = 'lightblue'
+background_color = 'white'
+triagle_size = 70
+max_iterations = 5
+divition = 3
+bottom_adjuster = 1.7
+output_file = 'koch_snowflake.png'
