@@ -46,7 +46,7 @@ def rec_fx(x, y, size, n)
 end
 
 size = width * carpet_size / 100
-start = (width - size) / 2
+start = (height - size) / 2
 size_inside = size / 3
 start_inside = start + size_inside
 
